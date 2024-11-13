@@ -83,9 +83,9 @@ public class Telalogin extends javax.swing.JFrame {
         add(botaoLogin);
 
         // JLabel para mostrar o ícone de conexão
-        statusIcon = new JLabel();
         statusIcon.setBounds(30, 200, 25, 25); // Posição visível
-        add(statusIcon);
+        add(statusIcon); statusIcon = new JLabel();
+       
         verificarConexao();
     }
 
