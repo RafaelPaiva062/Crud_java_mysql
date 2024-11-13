@@ -8,9 +8,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class TelaPrincipal extends JFrame {
-    private JLabel ldlDate;
-    private JLabel lblUsuario;
-    private JLabel lblAvatar;
+    private final  JLabel ldlDate;
+    private JPanel TelaPrincipal;
 
     public TelaPrincipal() {
         setTitle("Sistema de OS");
@@ -37,7 +36,7 @@ public class TelaPrincipal extends JFrame {
         painelDireito.setBackground(new Color(220, 220, 220));
 
         // Label para exibir o nome do usuário
-        lblUsuario = new JLabel("USUÁRIO", SwingConstants.CENTER);
+        JLabel lblUsuario = new JLabel("USUÁRIO", SwingConstants.CENTER);
         lblUsuario.setFont(new Font("Arial", Font.BOLD, 14));
         lblUsuario.setAlignmentX(Component.CENTER_ALIGNMENT);
 
@@ -48,7 +47,7 @@ public class TelaPrincipal extends JFrame {
 
         // Ícone do avatar
         ImageIcon avatarIcon = new ImageIcon("/br/com/loja/icones/java.png");
-        lblAvatar = new JLabel(avatarIcon);
+        JLabel lblAvatar = new JLabel(avatarIcon);
         lblAvatar.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Adicionar componentes ao painel direito
